@@ -1,0 +1,82 @@
+
+
+{% extends "header.html" %}
+
+
+{% block content %}
+<div class="hinicio">
+    <a href="/Administrador">Inicio</a>
+</div>
+
+        
+        <section class="firts">
+           <section class="exterior">  
+                <form 
+                  
+                action=""
+                method="post"
+                
+                
+                >
+                    <div class="okok">
+                        <div class="content">
+                            <div class="box">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" value="" required="" class="inp"  name="producto">
+                            </div>
+                            <div class="box">
+                                <label for="precio">Precio:</label>
+                                <input type="text" id="precio" value="" required class="inp"  name="precio">   
+                            </div>
+                            <div class="box">
+                                <label for="comentario">Descripcion:</label>
+                                <input type="text" id="comentario" value="" class="inp"  name="comment">
+                            </div>
+                            <div class="box">
+                                <label for="stock">Stock:</label>
+                                <input type="text" id="stock" value="" required class="inp"  name="stock">
+                            </div>
+    
+                        </div>
+                        <div class="botones">
+                            <div class="btn"><a href="{{url_for('anadir')}}"><input type="submit" value="Añadir" class="subm"></a></div>
+                            
+                        </div>
+                    </div>
+                    {% for message in get_flashed_messages() %}
+                    <div class="flash" style="color: black;">{{ message }}</div>
+                    {% endfor %}
+                </form>
+                
+                    
+
+                    
+                
+            </section>
+
+            <section class="second">
+                <div class="imagen">
+                    <div>
+                        <img src="{{ url_for('static', filename='Img/tenis.jpg') }}" alt="">
+                    </div>
+                    <div>
+                        <h1>Tenis Nike Rojo</h1>
+                        <h4>Ultima colección</h4>
+                    </div>
+                    
+                </div>
+                
+            </section>
+            
+        </section>
+
+
+        
+
+
+{% endblock %}
+
+
+
+
+ 

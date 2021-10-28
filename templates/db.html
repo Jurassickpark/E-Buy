@@ -1,0 +1,69 @@
+{% extends "header.html" %}
+
+
+{% block content %}
+<div class="hinicio">
+    <a href="/Administrador">Inicio</a>
+</div>
+        
+
+        <div class="datab">
+            
+                <div class="c-header">
+
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Descripcion</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Eliminar</th>
+                            <th>Editar datos</th>
+                        </tr>
+                    </thead>
+                    
+        
+                    <tbody> 
+                    {% for n in datoss %}
+                    <tr>
+                        <!-- Los datos vienen en forma de Tupla  -->
+                        <td>{{n.0}}</td>       
+                        <td>{{n.1}}</td>
+                        <td>{{n.2}}</td>
+                        <td>{{n.3}}</td>
+                        <td>{{n.4}}</td>
+                        <td>
+                            <a class="eliminar" href="/Delete/{{n.0}}">Eliminar</a>
+                            
+                        </td>
+                        <td class="modifcenter">
+                            <a class="modif" href="/edit/{{n.0}}">Editar Datos</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    </tbody> 
+        
+                    
+                </table>    
+        
+        
+                {% for message in get_flashed_messages() %}
+                <div class="flash" style="color: black;">{{ message }}</div>
+                {% endfor %}
+
+
+                <div class="f-footer">
+
+                </div>
+        
+        </div>
+
+
+
+
+{% endblock %}
+

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="176.89" height="176.957" viewBox="0 0 176.89 176.957">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#812082"/>
+      <stop offset="0" stop-color="#831f82"/>
+      <stop offset="0.06" stop-color="#a5147c"/>
+      <stop offset="0.12" stop-color="#c00b78"/>
+      <stop offset="0.18" stop-color="#d30575"/>
+      <stop offset="0.24" stop-color="#de0174"/>
+      <stop offset="0.3" stop-color="#e20073"/>
+      <stop offset="0.66" stop-color="#e95f32"/>
+      <stop offset="1" stop-color="#e3312d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0" y1="0.5" x2="1" y2="0.5" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Grupo_40" data-name="Grupo 40" transform="translate(-1397.076 -850.821)">
+    <g id="Grupo_39" data-name="Grupo 39">
+      <path id="Trazado_24" data-name="Trazado 24" class="cls-1" d="M521.407,191.107H462.623a59.12,59.12,0,0,1-59.053-59.053V73.2A59.12,59.12,0,0,1,462.623,14.15h58.784A59.12,59.12,0,0,1,580.46,73.2v58.851A59.133,59.133,0,0,1,521.407,191.107ZM462.623,30.618A42.639,42.639,0,0,0,420.038,73.2v58.851a42.639,42.639,0,0,0,42.585,42.6h58.784a42.652,42.652,0,0,0,42.6-42.6V73.2a42.652,42.652,0,0,0-42.6-42.585Z" transform="translate(993.506 836.671)"/>
+      <path id="Trazado_25" data-name="Trazado 25" class="cls-2" d="M478.266,123.351a34.506,34.506,0,1,1,34.505-34.506A34.506,34.506,0,0,1,478.266,123.351Zm0-60.771a26.278,26.278,0,1,0,26.278,26.265A26.279,26.279,0,0,0,478.266,62.581Z" transform="translate(1007.254 850.421)"/>
+      <path id="Trazado_26" data-name="Trazado 26" class="cls-2" d="M508.138,62.666A14.468,14.468,0,1,1,522.606,48.2,14.468,14.468,0,0,1,508.138,62.666Zm0-20.709a6.241,6.241,0,1,0,6.227,6.241A6.241,6.241,0,0,0,508.138,41.957Z" transform="translate(1024.328 843.37)"/>
+    </g>
+  </g>
+</svg>

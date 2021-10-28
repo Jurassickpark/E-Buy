@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1530" height="720" viewBox="0 0 1530 720">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        filter: url(#Rectángulo_53);
+      }
+    </style>
+    <filter id="Rectángulo_53" x="0" y="0" width="1530" height="720" filterUnits="userSpaceOnUse">
+      <feOffset dy="15" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-4" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <g id="Rectángulo_53-2" data-name="Rectángulo 53" class="cls-1" transform="translate(22.5 7.5)">
+      <path class="cls-2" d="M32,0H1235a250,250,0,0,1,250,250V425a250,250,0,0,1-250,250H32A32,32,0,0,1,0,643V32A32,32,0,0,1,32,0Z"/>
+      <path class="cls-3" d="M32,.5H1235A249.5,249.5,0,0,1,1484.5,250V425A249.5,249.5,0,0,1,1235,674.5H32A31.5,31.5,0,0,1,.5,643V32A31.5,31.5,0,0,1,32,.5Z"/>
+    </g>
+  </g>
+</svg>

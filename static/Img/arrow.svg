@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.798" height="12.181" viewBox="0 0 18.798 12.181">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#812082"/>
+      <stop offset="0" stop-color="#831f82"/>
+      <stop offset="0.06" stop-color="#a5147c"/>
+      <stop offset="0.12" stop-color="#c00b78"/>
+      <stop offset="0.18" stop-color="#d30575"/>
+      <stop offset="0.24" stop-color="#de0174"/>
+      <stop offset="0.3" stop-color="#e20073"/>
+      <stop offset="0.66" stop-color="#e95f32"/>
+      <stop offset="1" stop-color="#e3312d"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_37" data-name="Grupo 37" transform="translate(-435.003 -356.778)">
+    <g id="Capa_2" data-name="Capa 2" transform="translate(435.004 356.775)">
+      <g id="Capa_1" data-name="Capa 1" transform="translate(-0.001 0.004)">
+        <path id="Trazado_47" data-name="Trazado 47" d="M10.667,7.685a2.053,2.053,0,0,1-2.539,0L.327,1.541A.861.861,0,1,1,1.392.188l6.735,5.3a2.05,2.05,0,0,0,2.539,0L17.4.188a.861.861,0,1,1,1.065,1.352Z" transform="translate(0.001 -0.004)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Capa_2-2" data-name="Capa 2" transform="translate(435.004 360.835)">
+      <g id="Capa_1-2" data-name="Capa 1" transform="translate(-0.001 0.004)">
+        <path id="Trazado_47-2" data-name="Trazado 47" d="M10.667,7.685a2.053,2.053,0,0,1-2.539,0L.327,1.541A.861.861,0,1,1,1.392.188l6.735,5.3a2.05,2.05,0,0,0,2.539,0L17.4.188a.861.861,0,1,1,1.065,1.352Z" transform="translate(0.001 -0.004)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

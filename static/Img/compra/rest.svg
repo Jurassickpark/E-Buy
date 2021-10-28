@@ -1,0 +1,39 @@
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15.083" height="15.083" viewBox="0 0 15.083 15.083">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#812082"/>
+      <stop offset="0" stop-color="#831f82"/>
+      <stop offset="0.06" stop-color="#a5147c"/>
+      <stop offset="0.12" stop-color="#c00b78"/>
+      <stop offset="0.18" stop-color="#d30575"/>
+      <stop offset="0.24" stop-color="#de0174"/>
+      <stop offset="0.3" stop-color="#e20073"/>
+      <stop offset="0.66" stop-color="#e95f32"/>
+      <stop offset="1" stop-color="#e3312d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.959" y1="-0.659" x2="0.155" y2="4.466" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#661470"/>
+      <stop offset="0.022" stop-color="#76116d"/>
+      <stop offset="0.075" stop-color="#980a69"/>
+      <stop offset="0.129" stop-color="#b20665"/>
+      <stop offset="0.184" stop-color="#c50263"/>
+      <stop offset="0.241" stop-color="#d10061"/>
+      <stop offset="0.302" stop-color="#d50061"/>
+      <stop offset="0.661" stop-color="#e24722"/>
+      <stop offset="1" stop-color="#d91820"/>
+    </linearGradient>
+  </defs>
+  <g id="Capa_1" data-name="Capa 1" transform="translate(0 0)">
+    <path id="Trazado_53" data-name="Trazado 53" class="cls-1" d="M464.884,43.133a7.541,7.541,0,1,1,7.539-7.54A7.541,7.541,0,0,1,464.884,43.133Zm0-14.351A6.812,6.812,0,1,0,471.7,35.6a6.812,6.812,0,0,0-6.817-6.814Z" transform="translate(-457.34 -28.05)"/>
+    <path id="Trazado_54_-_Contorno" data-name="Trazado 54 - Contorno" class="cls-2" d="M-1674.873,259.2h-9.775a.426.426,0,0,1-.426-.426.426.426,0,0,1,.426-.426h9.775a.425.425,0,0,1,.425.426A.425.425,0,0,1-1674.873,259.2Z" transform="translate(1687.328 -251.233)"/>
+  </g>
+</svg>

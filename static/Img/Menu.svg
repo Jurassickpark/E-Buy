@@ -1,0 +1,14 @@
+<svg id="Menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59" height="37" viewBox="0 0 59 37">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.983" y1="0.024" x2="0.048" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#661470"/>
+      <stop offset="0.022" stop-color="#76116d"/>
+      <stop offset="0.256" stop-color="#c50263"/>
+      <stop offset="0.422" stop-color="#d10061"/>
+      <stop offset="0.597" stop-color="#d50061"/>
+      <stop offset="0.799" stop-color="#e24722"/>
+      <stop offset="1" stop-color="#d91820"/>
+    </linearGradient>
+  </defs>
+  <path id="Menu-2" data-name="Menu" d="M2.5,37a2.5,2.5,0,1,1,0-5h54a2.5,2.5,0,0,1,0,5Zm0-16a2.5,2.5,0,1,1,0-5h54a2.5,2.5,0,0,1,0,5Zm0-16a2.5,2.5,0,1,1,0-5h54a2.5,2.5,0,0,1,0,5Z" fill="url(#linear-gradient)"/>
+</svg>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styleLogin.css')}}">
+    <script src="{{ url_for('static', filename='js/contra.js')}}"></script>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Img/Favicon.png') }}" type="image/x-icon">
+</head>
+<body>
+    
+    <section class="sec" name="" id="">
+        <img class="left" src="{{ url_for('static', filename='Img/tres.jpg') }}" alt="">
+        <section class="sec2">
+            <div class="centrando">
+                <img class="logo" src="{{ url_for('static', filename='Img/Logo.png') }}"  alt="">
+            </div>
+       
+        <div class="exterior">
+            <div class="interior">
+                <div class="formulario">
+                    <form 
+                    action="{{url_for('login')}}"
+                    method="post"
+                    name="loginform"
+                    novalidate
+                    >
+                
+                    
+                        <div class="par">
+                            <label for="correo"><p>Correo electrónico/Móvil::</p></label>
+                            <input class="t" id="correo" type="text" inputmode="email" autocapitalize="none" autocorrect="off" autocomplete="email" required="" placeholder="Usuario" name="correoEmail" aria-required="true" value="">
+                        </div>
+                        {% for message in get_flashed_messages() %}
+                            <div class="flash" style="color: black;">{{ message }}</div>
+                        {% endfor %}
+                        
+
+
+                        <div class="par">   
+                            <label for="contra"><p>Contraseña:</p></label>
+                            <div class="relativo">
+                                <input class="t" id="contra" type="password" autocomplete="current-password" required="" placeholder="••••••••••••" name="password" aria-required="true" value="">
+                                <div class="absolutamente">
+                                    <button type="button" onclick="mostrarContrasena()"><img class="view" src="{{ url_for('static', filename='Img/awesome-eye.svg') }}"/></button>                                   
+                                </div>
+                            </div>    
+                        </div>
+
+
+
+
+
+
+
+                        <div class="centro">
+                            <button class="iniciar" type="submit" ><span>Iniciar sesión</span></button>
+                        </div>
+                        
+                    
+                    </form>
+                </div>
+                
+
+    
+                <div class="container">
+                    <div class="redesociales">
+                        <div class="rs">
+                            
+                            <a href="/Google"><button class="b" type="submit"><span>Iniciar sesión con Google </span><img src="{{ url_for('static', filename='Img/Googlesvg.svg') }}" height="25px" width="25px" alt=""></button></a>
+                        </div>
+                        <div class="rs">
+                            <button class="b" type="submit"><span>Iniciar sesión con Facebook</span> <img src="{{ url_for('static', filename='Img/Facebooksvg.svg') }}" height="25px" width="25px" alt=""></button>
+                        </div>
+                        <div class="rs">
+                            <button class="b" type="submit"><span>Iniciar sesión con apple</span><img src="{{ url_for('static', filename='Img/Applesvg.svg') }}" height="25px" width="25px" alt=""></button>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                    <div class="parrafo">
+                        <p class="c">¿Olvidaste tu contraseña?<a href="#" draggable="false"><span > Pulsa aqui</span></a></p>
+                        <p class="c">¿Si Aún no te has registrado?<a href="{{url_for('registro')}}"><span> Registrate ahora</span></a></p>
+                    </div>               
+            </div>
+        </div>
+        <div class="btn">
+            <div>
+                <button class="b1" type="submit" ><a href="{{url_for('registro')}}"><span>Regístrate</span></a></button>
+            </div>
+            <div>
+                <button class="b2" type="submit" ><a href="#"><span>Iniciar sesión</span></a></button>
+            </div>
+        </div>
+    </section>
+    </section>
+
+
+</body>
+</html>

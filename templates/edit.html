@@ -1,0 +1,46 @@
+{% extends "header.html" %}
+
+
+{% block content %}
+
+<section class="cen1">
+            <form 
+            action="/update/{{datos.0}}"      
+            method="post"
+            >
+                <div class="okok">
+                    <div class="box">
+                        
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" value="{{datos.1}}"  class="inp"  name="producto">
+                    </div>
+                    <div class="box">
+                        <label for="precio">Precio:</label>
+                        <input type="text" id="precio" value="{{datos.3}}"  class="inp"  name="precio">   
+                    </div>
+                    <div class="box">
+                        <label for="comentario">Descripcion:</label>
+                        <input type="text" id="comentario" value="{{datos.2}}" class="inp"  name="comment">
+                    </div>
+                    <div class="box">
+                        <label for="stock">Stock:</label>
+                        <input type="text" id="stock" value="{{datos.4}}"  class="inp"  name="stock">
+                    </div>
+                    
+                    
+                    <div class="botones">
+                        <div class="btn"><a href="#"><input type="submit" value="Editar" class="subm"></a></div>
+                        <div class="subi"><a href="/Delete/{{datos.0}}"  >Eliminar</a></div>
+                    </div>
+                    
+                </div>
+            </form>
+
+</section>
+
+
+
+
+
+
+{% endblock %}

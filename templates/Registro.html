@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <title>Registro</title>
+    <script src="{{ url_for('static', filename='js/contra.js')}}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleR.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Img/Favicon.png') }}" type="image/x-icon">
+</head>
+<body>
+
+
+    <section class="sec" name="" id="">
+        <img class="left" src="{{ url_for('static', filename='Img/tres.jpg') }}" alt="">
+        <section class="sec2">
+            <div class="centrando">
+                <img class="logo" src="{{ url_for('static', filename='Img/Logo.png') }}"  alt="">
+            </div>
+       
+        <div class="exterior">
+            <div class="interior">
+                <div class="formulario">
+                    <form 
+                    class="yes" 
+                    action="{{ url_for('registro')}}"
+                    method="post"
+                    name="formRegistro"
+                    
+                    >
+                        <div class="par">
+                            <label for="nombre"><p>Nombre:</p></label>
+                            <input class="t" id="nombre" type="text"  autocapitalize="none" autocorrect="off" autocomplete="email" placeholder="Nombre" name="nombre" aria-required="true" value="">
+                        </div>
+                        
+                        <div class="par">   
+                            <label for="lastname"><p>Apellido:</p></label>
+                            <input class="t" id="lastname" type="text" required="" placeholder="Username" name="apellido"  value="">    
+                        </div>
+
+                        <div class="par">   
+                            <label for="correo"><p>Correo:</p></label>
+                            <input class="t" id="correo" type="text" inputmode="email" autocapitalize="none" autocorrect="off" autocomplete="email"  placeholder="Correo electrónico o móvil" name="correo"  value="">
+                        </div>
+                        
+                        <div class="par">   
+                            <label for="contra"><p>Contraseña:</p></label>
+                            <div class="relativo">
+                                <input class="t" id="contra" type="password" autocomplete="current-password"  placeholder="••••••••••••" name="password"  value="">
+                                <div class="absolutamente">
+                                    <button type="button" onclick="mostrarContrasena()"><img class="view" src="{{ url_for('static', filename='Img/awesome-eye.svg') }}"/></button>                                   
+                                </div>
+                            </div>    
+                        </div>
+
+                        <div class="acepto">
+                            <div class="ok1">
+                                <input class = "check" type="checkbox" name="opcion" value=""  aria-required="true" required>
+                            </div>
+                            <div class="ok2" >
+                                <p class="c">Acepto los Términos y Condiciones y autorizo el uso de mis datos de acuerdo a la Declaración de Privacidad y la Autorización de Tratamiento de Datos.</p>
+                            </div> 
+                            
+                            
+                        </div>   
+
+                        <div class="centro">
+                            <button class="iniciar" type="submit" ><span>Aceptar</span></button>
+                        </div>
+
+                    </form>  
+                            
+                        
+                            
+            
+                        <div class="container">
+                            {% for message in get_flashed_messages() %}
+                            <div class="flash" style="color: white;">{{ message }}</div>
+                            {% endfor %}
+                            <div class="redesociales">
+                                <div class="rs">
+                                    
+                                    <a href="/Google"><button class="b" type="submit"><span>Iniciar sesión con Google </span><img src="{{ url_for('static', filename='Img/Googlesvg.svg') }}" height="25px" width="25px" alt=""></button></a>
+                                </div>
+                                <div class="rs">
+                                    <button class="b" type="submit"><span>Iniciar sesión con Facebook</span> <img src="{{ url_for('static', filename='Img/Facebooksvg.svg') }}" height="25px" width="25px" alt=""></button>
+                                </div>
+                                <div class="rs">
+                                    <button class="b" type="submit"><span>Iniciar sesión con apple</span><img src="{{ url_for('static', filename='Img/Applesvg.svg') }}" height="25px" width="25px" alt=""></button>
+                                </div>
+            
+                            </div>
+                        </div>
+
+
+                            
+                            
+                            
+                        
+                    
+            </div>
+                    
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="btn">
+            <div>
+                <button class="b1" type="submit" ><a href="#"><span>Regístrate</span></a></button>
+            </div>
+            <div>
+                <button class="b2" type="submit" ><a href="{{url_for('login')}}"><span>Iniciar sesión</span></a></button>
+            </div>
+        </div>
+
+        
+        
+        
+    </section>
+    </section>
+
+
+
+
+</body>
+</html>

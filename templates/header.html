@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesAnadir.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/principal.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Img/FaviconR.png') }}" type="image/x-icon">
+
+    <script src="{{ url_for('static', filename='js/product.js')}}" defer></script>
+    <script src="{{ url_for('static', filename='js/direccion.js')}}" defer></script>
+    <script src="{{ url_for('static', filename='js/perfil.js')}}" defer></script>
+    <script src="{{ url_for('static', filename='js/lightbox.js')}}" defer></script>
+</head>
+<body>
+    
+<section class="galeria">     
+    <div class="direccion">
+        <div class="colores">
+
+        </div>
+       <div class="sera">
+        <img src=" {{ url_for('static', filename='Img/Location.svg') }}" alt="" class="img-galeria">
+
+     
+             <p class="recibir">¿Donde recibirás tu compra?</p>
+         
+
+             <form class="formula">
+                        <label for="direccion" >Dirección:</label>
+                        <div class="fA">                   
+                            <div class="num">
+                                <div class="num1">            
+                                    <div>
+                                        <img src="{{ url_for('static', filename='Img/IconosNav/awesome-check-circle.svg') }}" alt="">
+                                    </div>
+                                    <div class="columna">
+                                        <input class="nothing" type="text" id="direccion" value="" placeholder="Dirección...">
+                                        <input class="nothing" type="text" value="" placeholder="Barrio - Ciudad">
+                                    </div>
+                                </div>
+                                <div>
+                                    <input class="nothing" type="text" value="" placeholder="Nombre">
+                                </div>
+                            </div>           
+                            <a role="button" href="#" class="edit" target="_parent"><span class="">Editar dirección</span></a>
+                        </div>
+                        <p>¿Otra ubicación?</p>
+                        <div class="fA">                   
+                            <div class="">         
+                                    
+                                    <div class="num">
+                                        <input class="down" type="radio" class="andes-radio__input" id="address_1168668606" name="address_id" value="1168668606"/>
+                                        <div class="columna">
+                                            <label for="depa">Departamento:</label>
+                                            <input class="down" type="text" id="depa" value="">
+                                        </div>
+                                        <div class="columna">
+                                            <label for="city">Ciudad:</label>
+                                            <input class="down" type="text" id="city" value="">
+                                        </div>
+                                    </div>
+                            </div>           
+                            <a role="button" href="#" class="edit" target="_parent"><span class="">Agregar</span></a>
+                        </div> 
+                        <div  class="guardar">
+                            <button type="submit">Guardar cambios</button> 
+                        </div>
+                    
+             </form>
+        </div>
+       
+    </div>  
+
+
+
+
+
+    <section class="imagen-light">
+        <img src="{{ url_for('static', filename='Img/Close.svg') }}" alt="" class="close">
+        <img src="" alt="" class="agregar-imagen">         
+    </section>
+</section>
+
+
+
+
+
+
+<div class="fondo21">
+    <div class="fondo31">
+        <div class="yes">
+            <div class="yes2">
+                <a href=""><img src="{{ url_for('static', filename='Img/foto.svg') }}" alt="" class="u"></a>
+                {% if g.user or session["name"] %}
+                    {% if g.user %}
+                        {% for message in get_flashed_messages() %}
+                                <div class="flash" style="color: black;">{{ message }}</div>
+                        {% endfor %}
+                    
+                    {% else %}
+                        {% for message in get_flashed_messages() %}
+                                <div class="flash" style="color: black;">{{ message }}</div>
+                        {% endfor %}
+                    {% endif %}
+                {% else %}
+                <p>Nombre</p>
+                <P>Correo Electronico</P>
+                {% endif %}
+                
+                
+                
+                
+                
+            </div>
+            <div class="claro">
+                <div>
+                    <a href=""><img src="{{ url_for('static', filename='Img/IconosNav/metro-profile.svg') }}" alt="">Perfil</a>
+                    <a href=""><img src="{{ url_for('static', filename='Img/IconosNav/awesome-edit.svg') }}" alt="">Editar Perfil</a>
+                    <a href=""><img src="{{ url_for('static', filename='Img/IconosNav/awesome-database.svg') }}" alt="">Politica de Privacidad</a>
+                </div>
+                <div>
+                    <a href=""><img src="{{ url_for('static', filename='Img/IconosNav/material-add-alert.svg') }}" alt="">Mis alertas</a>
+                    <a href=""><img src="{{ url_for('static', filename='Img/IconosNav/ionic-md-help-circle.svg') }}" alt="">Ayuda</a>
+                    <a href=""><img src="{{ url_for('static', filename='Img/IconosNav/metro-location.svg') }}" alt="" class="img1">Agregar ubicación</a>
+                </div>
+            </div>
+            <div class="listadeseos">
+                <a href=""><img src="{{ url_for('static', filename='Img/IconosNav/ionic-md-star.svg') }}" alt="">Lista de deseos</a>
+            </div>
+            
+            <div class="salirahora">
+                <a href="/logout"><img src="{{ url_for('static', filename='Img/IconosNav/awesome-sign-out-alt.svg') }}" alt="">Salir</a>
+            </div>
+
+            
+        </div>
+        <section class="imagen-light">
+            <img src="{{ url_for('static', filename='Img/Close.svg') }}" alt="" class="closek">
+            <img src="" alt="" class="agregar-imagen">         
+        </section>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+    <div class="container">
+        <nav>
+            <img src="{{ url_for('static', filename='Img/Menu.svg') }}" alt="" class="m">   
+
+            <nav class="menu-navegacion">
+                <img class="superior" src="{{ url_for('static', filename='Img/IconosNav/contornoatrazado.svg') }}" alt="">
+                <img class="abs" src=" {{ url_for('static', filename='Img/IconosNav/Logo.svg') }}" alt="">
+                            <section class="contenedorA">
+                                
+                                <section class="ladoA">
+                                    <h2>Categorias</h2>
+                                    <hr/>
+                                    <a href="#Televisores"><img src="  {{ url_for('static', filename='Img/IconosNav/awesome-tv.svg') }}" alt="">Televisores</a>
+                                    <a href="#Celulares"><img src="{{ url_for('static', filename='Img/IconosNav/ionic-ios-phone-portrait.svg') }}" alt="">Celulares</a>
+                                    <a href="#Bolsos"><img src="   {{ url_for('static', filename='Img/IconosNav/awesome-shopping-bag.svg') }}" alt="">Bolsos</a>
+                                    <a href="#Tecnologia"><img src="   {{ url_for('static', filename='Img/IconosNav/material-laptop-mac.svg') }}" alt="">Tecnologia</a>
+                                    <a href="#Camaras"><img src="  {{ url_for('static', filename='Img/IconosNav/ionic-ios-camera.svg') }}" alt="">Camaras</a>
+                                    <a href="#Cosasdelhogar"><img src="{{ url_for('static', filename='Img/IconosNav/ionic-md-home.svg') }}" alt="">Cosas del hogar</a>
+                                    <a href="#RelojesyJoyas"><img src="{{ url_for('static', filename='Img/IconosNav/ionic-md-watch.svg') }}" alt="">Relojes y Joyas</a>
+                                    <a href="#Mascotas"><img src=" {{ url_for('static', filename='Img/IconosNav/awesome-dog.svg') }}" alt="">Mascotas</a>
+                                    <a href="#Juegos"><img src="   {{ url_for('static', filename='Img/IconosNav/ionic-logo-game-controller-b.svg') }}" alt="">Juegos</a>
+                                    <a href="#Deporte"><img src="  {{ url_for('static', filename='Img/IconosNav/awesome-volleyball-ball.svg') }}" alt="">Deporte</a>
+                                    <a href="#Musica"><img src="   {{ url_for('static', filename='Img/IconosNav/awesome-music.svg') }}" alt="">Musica</a>
+                                    <a href="#Salud"><img src="{{ url_for('static', filename='Img/IconosNav/awesome-heartbeat.svg') }}" alt="">Salud</a>
+                                    <a href="#Motos"><img src="{{ url_for('static', filename='Img/IconosNav/awesome-motorcycle.svg') }}" alt="">Motos</a>
+                                    <a href="#Carros"><img src="   {{ url_for('static', filename='Img/IconosNav/awesome-car.svg') }}" alt="">Carros</a>
+                                    <a href="#Herramientas"><img src=" {{ url_for('static', filename='Img/IconosNav/awesome-tools.svg') }}" alt="">Herramientas</a>
+                                    <a href="#Zapatos"><img src="  {{ url_for('static', filename='Img/IconosNav/awesome-shoe-prints.svg') }}" alt="">Zapatos</a>
+                                    <a href="#MaquillajeyBelleza"><img src="   {{ url_for('static', filename='Img/IconosNav/map-beauty-salon.svg') }}" alt="">Maquillajje y Belleza</a>
+                                    <a href="#Ropa"><img src=" {{ url_for('static', filename='Img/IconosNav/ionic-ios-shirt.svg') }}" alt="">Ropa</a>
+                                    
+                                </section>
+                                <section class="ladoB">
+                                    <h2 class="others">Otros</h2>
+                                    <hr/>
+                                    
+                                    <a href="#SobreNosotros"><img src="{{ url_for('static', filename='Img/IconosNav/ionic-ios-people.svg') }}" alt="">Sobre Nosotros</a>
+                                    <a href="#Contactenos"><img src="  {{ url_for('static', filename='Img/IconosNav/material-contacts.svg') }}" alt="">Contactenos</a>
+                                    <a href="#Ofertas"><img src="  {{ url_for('static', filename='Img/IconosNav/material-local-offer.svg') }}" alt="">Ofertas</a>
+                                    <a href="#NuestrasTiendas"><img src="  {{ url_for('static', filename='Img/IconosNav/metro-location.svg') }}" alt="">NuestrasTiendas</a>
+                                </section>
+                            </section>
+                            
+                            <section class="contenedorB">
+                                <section class="country">
+                                   <div class="lineas">
+                                        <a href="#pais"><img src=" {{ url_for('static', filename='Img/IconosNav/colombia.svg') }}" alt="">Colombia</a>
+                                   </div>
+                                    
+                                   
+                                    <a href="#help"><img src=" {{ url_for('static', filename='Img/IconosNav/ionic-md-help-circle.svg') }}" alt="">Ayuda</a>
+                                    <a href="#lenguages"><img src="{{ url_for('static', filename='Img/IconosNav/metro-earth2.svg') }}" alt="">Español</a>
+                                </section>
+                                <section class="deseos">
+                                   <div class="lineas">
+                                    <a href="#Lista"><img src="{{ url_for('static', filename='Img/IconosNav/ionic-md-star.svg') }}" alt="">Lista de deseos</a>
+                                    </div>
+                                </section>
+                            </section>                      
+
+            </nav>
+
+
+
+            <!-- {{ url_for('static', filename='Img/Menu.svg') }} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="usuario">
+                <a href="#"><img src=" {{ url_for('static', filename='Img/foto.svg') }}" alt="" class="u"></a>
+                <a class="par" href="#">Usuario</a>
+                <a href="#"><img src=" {{ url_for('static', filename='Img/arrow.svg') }}" alt="" ></a>
+
+            </div>
+            
+            <div class="cart">
+                <a href="#"><img src="{{ url_for('static', filename='Img/cart_1.svg') }}" alt="" class="c"></a>
+                <p>0</p>
+            </div>
+            <a href="#"><img src="{{ url_for('static', filename='Img/LogoR.svg') }}" alt="" class="l"></a>
+            <div class="buscar">
+                <label for="se"></label>
+                <input class="in" type="text" placeholder="Search..." id="se">
+                <a href="#"><img src="{{ url_for('static', filename='Img/Search.svg') }}" alt="" class="s"></a>
+            </div>
+            
+            <div class="location">
+                <a href="#" class="ok">Ingresa tu ubicación</a>
+                <a href="#"><img src="{{ url_for('static', filename='Img/Location.svg') }}" alt="" class="lo"></a>
+            </div>
+            
+        </nav>
+    </div>
+</header>
+
+<main>
+    {% block content %}
+    {% endblock %}
+    
+</main>
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
